@@ -1,0 +1,10 @@
+services:
+    postgres:
+        image: postgres:14.0-alpine
+        container_name: kazmarket-db
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_USER: kazmarket
+            POSTGRES_PASSWORD: kazmarket
+            POSTGRES_DB: kazmarket
